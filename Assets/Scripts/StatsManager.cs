@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class StatsManager : MonoBehaviour
@@ -22,5 +23,25 @@ public class StatsManager : MonoBehaviour
     public int subscribers;
     public int viewers;
     //what is reputation lol
+    [Header("UI")] 
+    [SerializeField] private TextMeshProUGUI subCount;
+    [SerializeField] private TextMeshProUGUI viewerCount;
+
+    public void UpdateSubscribers(int change)
+    {
+        subscribers += change;
+        UpdateUI();
+    }
+    public void UpdateViewers(int change)
+    {
+        viewers += change;
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        subCount.text = subscribers.ToString();
+        viewerCount.text = viewers.ToString();
+    }
 }
 
