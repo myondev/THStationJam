@@ -35,16 +35,10 @@ public class CardManager : MonoBehaviour
     [Header("UI")] 
     [SerializeField] private CardUI cardTemplate;
     [SerializeField] private Transform cardGrid;
-    
 
-    private void Start()
+    public void GenerateCardUI()
     {
         availableCards = allCards.ToList();
-        GenerateCardUI();
-    }
-
-    private void GenerateCardUI()
-    {
         for (int i = 0; i < maxCards; i++)
         {
             if (i > currentCards.Count)

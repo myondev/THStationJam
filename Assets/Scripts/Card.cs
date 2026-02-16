@@ -26,8 +26,7 @@ public class Card : ScriptableObject //i believe it should be a scriptable objec
         
         StatsManager.instance.UpdateViewers(viewerModifier);
         StatsManager.instance.UpdateSubscribers(subscriberModifier);
-        //but how will we do a card order??
-        //i'll have to find out whenever they respond lol
+        
         
     }
     
