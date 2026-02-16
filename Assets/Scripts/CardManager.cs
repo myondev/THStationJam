@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CardManager : MonoBehaviour
 {
@@ -24,41 +26,48 @@ public class CardManager : MonoBehaviour
         public Card card;
         public CardUI cardUI;
     }
-    [Header("Cards")]
+
+    [Header("Cards")] 
     [SerializeField] private Card[] allCards;
-    public List<Card> currentCards;
+    private List<Card> availableCards;
+    private List<GeneratedCard> currentCards = new();
     [SerializeField] private int maxCards; //the amount of cards you get during a stream
     [Header("UI")] 
-    private List<GeneratedCard> allCardUIs = new();
     [SerializeField] private CardUI cardTemplate;
     [SerializeField] private Transform cardGrid;
     
 
     private void Start()
     {
+        availableCards = allCards.ToList();
         GenerateCardUI();
     }
 
     private void GenerateCardUI()
     {
-        foreach (Card foundCard in currentCards) //no, that's not how it works but i'll fix that later
+        for (int i = 0; i < maxCards; i++)
         {
+            if (i > currentCards.Count)
+            {
+                break; //probably shouldn't be possible but who knows!
+            }
+            int randomCard = Random.Range(0, availableCards.Count - 1);
             CardUI newCardUI = Instantiate(cardTemplate, cardGrid);
-            allCardUIs.Add(new GeneratedCard {card = foundCard, cardUI = newCardUI});
-            newCardUI.SetUI(foundCard);
+            currentCards.Add(new GeneratedCard {card = availableCards[randomCard], cardUI = newCardUI});
+            newCardUI.SetUI(availableCards[randomCard]);
             newCardUI.gameObject.SetActive(true);
+            availableCards.Remove(availableCards[randomCard]);
         }
     }
     public void UseCard(Card selectedCard)
     {
         selectedCard.ActivateCard();
-        currentCards.Remove(selectedCard);
-        foreach (GeneratedCard foundCardUI in allCardUIs)
+        foreach (GeneratedCard foundCardUI in currentCards)
         {
             if (foundCardUI.card == selectedCard)
             {
                 Destroy(foundCardUI.cardUI.gameObject);
-                allCardUIs.Remove(foundCardUI);
+                currentCards.Remove(foundCardUI);
                 return;
             }
         }

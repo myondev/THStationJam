@@ -6,6 +6,7 @@ public class Card : ScriptableObject //i believe it should be a scriptable objec
     [Header("Identification")] 
     public string cardName;
     public Sprite cardImage;
+    public string description;
 
     [Header("Stat Changes")] 
     public int viewerModifier;
