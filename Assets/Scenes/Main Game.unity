@@ -234,7 +234,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 122a3192bfdb278efbb0d9484064b599, type: 2}
   - {fileID: 11400000, guid: 122a3192bfdb278efbb0d9484064b599, type: 2}
   - {fileID: 11400000, guid: 122a3192bfdb278efbb0d9484064b599, type: 2}
-  maxCards: 10
+  maxCards: 7
   cardTemplate: {fileID: 1928037960137331959, guid: 4a36794463e57fe1a845a769df7678a3, type: 3}
   cardGrid: {fileID: 732088437}
 --- !u!4 &158010767
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 732088437}
   - component: {fileID: 732088440}
   - component: {fileID: 732088439}
-  - component: {fileID: 732088438}
+  - component: {fileID: 732088441}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -909,30 +909,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &732088438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732088436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 200, y: 280}
-  m_Spacing: {x: 0, y: 0}
-  m_Constraint: 0
-  m_ConstraintCount: 2
 --- !u!114 &732088439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +947,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732088436}
   m_CullTransparentMesh: 1
+--- !u!114 &732088441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732088436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1016782827
 GameObject:
   m_ObjectHideFlags: 0
