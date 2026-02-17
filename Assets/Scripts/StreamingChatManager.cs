@@ -33,7 +33,6 @@ public class StreamingChatManager : MonoBehaviour
         if (timer >= currentDelay)
         {
             ChooseNewDelay();
-            timer = 0;
             
             CraftMessage();
         }
@@ -41,6 +40,7 @@ public class StreamingChatManager : MonoBehaviour
 
     private void ChooseNewDelay()
     {
+        timer = 0;
         currentDelay = Random.Range(minimumBeforeMessage, maximumBeforeMessage);
     }
 
@@ -48,7 +48,6 @@ public class StreamingChatManager : MonoBehaviour
     {
         string templateText = "streamtime username: text";
 
-        float minutes = timeInSeconds / 60;
         templateText = templateText.Replace("streamtime", $"<color=#595959>{Mathf.Floor(timeInSeconds / 60f):00}:{(timeInSeconds % 60):00}</color>");
         
         Color randomColor = Random.ColorHSV();
@@ -65,5 +64,14 @@ public class StreamingChatManager : MonoBehaviour
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, messageSize);
         var tmp = go.GetComponentInChildren<TextMeshProUGUI>();
         tmp.text = templateText;
+    }
+
+    public void ResetChat()
+    {
+        var array = layout.GetComponentsInChildren<RectTransform>();
+        for (int i = 0; i < array.Length;)
+            Destroy(array[i].gameObject);
+        timeInSeconds = 0;
+        ChooseNewDelay();
     }
 }
