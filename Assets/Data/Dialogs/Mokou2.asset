@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Mokou2
+  m_EditorClassIdentifier: 
+  dialogID: Mokou2
+  data:
+  - text: Do you have feelings for Kenie or Kaguya?
+    characterTalking: 0
+  - text: "I\u2019ll make tengu steak out of you if you don\u2019t keep your beak
+      shut\u2026"
+    characterTalking: 1

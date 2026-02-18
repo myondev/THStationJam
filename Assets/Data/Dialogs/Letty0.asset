@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
-  m_Name: DialogData
+  m_Name: Letty0
   m_EditorClassIdentifier: 
+  dialogID: Letty0
   data:
-  - dialogID: 
-    text: 
-    nextDialogId: 
+  - text: Why did you cause this snowstorm?
+    characterTalking: 0
+  - text: "Me? No, it wasn\u2019t me, I was half-asleep the entire time!"
+    characterTalking: 1
+  - text: "Well, before you ruined my little nap\u2026 are all Tengu this annoying?"
+    characterTalking: 1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Aya3
+  m_EditorClassIdentifier: 
+  dialogID: Aya3
+  data:
+  - text: Does the tengu society approve of your false claims?
+    characterTalking: 0
+  - text: What goes on behind the scenes?
+    characterTalking: 0
+  - text: "First of all, there is nothing \u2018false\u2019 about my \u2018objective
+      truths.\u2019"
+    characterTalking: 1
+  - text: "Secondly, I\u2019ll let you know that the Bunbunmaru is twenty times more
+      popular than your feeble newspaper."
+    characterTalking: 1
+  - text: "It\u2019s clear who the tengu favor!"
+    characterTalking: 1

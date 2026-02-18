@@ -5,12 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Scripts/Dialog")]
     public class DialogScript :  ScriptableObject
     {
+        public string dialogID;
         public List<DialogData> data;
     }
     [Serializable]
     public struct DialogData
     {
-        public string dialogID;
         public string text;
-        public string nextDialogId;
+        public CharacterTalking characterTalking;
     }
+
+public enum CharacterTalking {
+    Hatate,
+    Guest
+}

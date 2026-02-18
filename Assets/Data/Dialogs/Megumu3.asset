@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Megumu3
+  m_EditorClassIdentifier: 
+  dialogID: Megumu3
+  data:
+  - text: What are your intentions with Aya?
+    characterTalking: 0
+  - text: "Her articles make a surprising amount of money\u2026"
+    characterTalking: 1
+  - text: "ripe for an acquisition by her boss, don\u2019t you think?"
+    characterTalking: 1

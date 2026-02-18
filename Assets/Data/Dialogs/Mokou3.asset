@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Mokou3
+  m_EditorClassIdentifier: 
+  dialogID: Mokou3
+  data:
+  - text: Do you hate Kaguya?
+    characterTalking: 0
+  - text: Trying to sow more conflict in this forest?
+    characterTalking: 1
+  - text: "I\u2019ll enact a permanent tengu ban here, enforced by newspaper-burning
+      and feather-pulling"
+    characterTalking: 1

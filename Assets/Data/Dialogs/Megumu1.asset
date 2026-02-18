@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Megumu1
+  m_EditorClassIdentifier: 
+  dialogID: Megumu1
+  data:
+  - text: "What are you and Chimata\u2019s plans behind the scenes?"
+    characterTalking: 0
+  - text: Which one? The red snow? The tengu festival?
+    characterTalking: 1
+  - text: "Mayhaps the little black market we are running\u2026"
+    characterTalking: 1
+  - text: no, this is not an advertisement.
+    characterTalking: 1

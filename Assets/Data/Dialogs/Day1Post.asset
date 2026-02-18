@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
+  m_Name: Day1Post
+  m_EditorClassIdentifier: 
+  dialogID: Day1Post
+  data:
+  - text: "I got everything I needed, that wasn\u2019t so bad!"
+    characterTalking: 0
+  - text: "The only thing you\u2019re going to get is hypothermia if you stay here
+      for too long."
+    characterTalking: 1
+  - text: "Y-you\u2019re right, now that you mention it, I\u2019m starting to shiver.
+      Brr\u2026"
+    characterTalking: 0
+  - text: "Well I\u2019m done here, have fun not freezing to death"
+    characterTalking: 1
+  - text: "No need to give me the cold shoulder\u2026"
+    characterTalking: 0

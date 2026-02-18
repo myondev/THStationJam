@@ -62,6 +62,9 @@ public class  DayManager : MonoBehaviour
         //Show stats of the day
         // yield return new WaitUntil(() => Mouse.current.leftButton.isPressed);
         //Hide stats
+        
+        dialogManager.LaunchDialog($"Day{currentDay+1}Post");
+        yield return new WaitUntil(() => !dialogManager.IsDialogActive);
 
         blackScreen.gameObject.SetActive(true);
         float count = 0;
