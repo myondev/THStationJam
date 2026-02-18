@@ -16,6 +16,8 @@ public class DialogManager : MonoBehaviour
     
     private bool dialogActive;
 
+    public bool IsDialogActive => dialogActive;
+
     public void LaunchDialog(string dialogId)
     {
         if (!dialogActive)
