@@ -86,6 +86,7 @@ public class  DayManager : MonoBehaviour
         audioSource.Play();
         
         streamingChatManager.ResetChat();
+        CardManager.instance.allCards = dayList[currentDay].dayCardList;
         CardManager.instance.GenerateCardUI();
     }
 
@@ -95,5 +96,6 @@ public class  DayManager : MonoBehaviour
         public Sprite guest;
         public Sprite background;
         public AudioClip clip;
+        public Card[] dayCardList; //since cards are unique per stream, they must be set on each day.
     }
 }

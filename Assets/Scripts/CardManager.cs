@@ -28,7 +28,7 @@ public class CardManager : MonoBehaviour
     }
 
     [Header("Cards")] 
-    [SerializeField] private Card[] allCards;
+    public Card[] allCards;
     private List<Card> availableCards;
     private List<GeneratedCard> currentCards = new();
     [SerializeField] private int maxCards; //the amount of cards you get during a stream

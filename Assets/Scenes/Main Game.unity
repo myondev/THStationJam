@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f427b365b51b0445aad053c7a411c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 0}
+  dialogManager: {fileID: 778768577}
   subscribers: 0
   viewers: 0
   subCount: {fileID: 1016782829}
