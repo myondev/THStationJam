@@ -60,7 +60,7 @@ public class StreamingChatManager : MonoBehaviour
         
         templateText = templateText.Replace("text",  messageList.stringList[Random.Range(0, messageList.stringList.Count)]);
 
-        if (layout.transform.childCount > maximumMessages)
+        if (layout.transform.childCount == maximumMessages)
             Destroy(layout.transform.GetChild(0).gameObject);
 
         GameObject go =  Instantiate(chatMessagePrefab, layout.transform);
