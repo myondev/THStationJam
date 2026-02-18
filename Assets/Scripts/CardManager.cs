@@ -28,7 +28,6 @@ public class CardManager : MonoBehaviour
     }
 
     [Header("Cards")] 
-    public Card[] allCards;
     private List<Card> availableCards;
     private List<GeneratedCard> currentCards = new();
     [SerializeField] private int maxCards; //the amount of cards you get during a stream
@@ -36,10 +35,12 @@ public class CardManager : MonoBehaviour
     [SerializeField] private CardUI cardTemplate;
     [SerializeField] private Transform cardGrid;
 
-    public void GenerateCardUI()
+    public bool canUseCards = true;
+    
+    public void GenerateCardUI(Card[] allCards)
     {
         availableCards = allCards.ToList();
-        for (int i = 0; i < maxCards; i++)
+        for (int i = 0; i < allCards.Length; i++)
         {
             if (i > currentCards.Count)
             {
@@ -55,6 +56,7 @@ public class CardManager : MonoBehaviour
     }
     public void UseCard(Card selectedCard)
     {
+        if (!canUseCards) return;
         selectedCard.ActivateCard();
         foreach (GeneratedCard foundCardUI in currentCards)
         {
@@ -62,7 +64,6 @@ public class CardManager : MonoBehaviour
             {
                 Destroy(foundCardUI.cardUI.gameObject);
                 currentCards.Remove(foundCardUI);
-                Debug.Log(currentCards.Count);
                 if (currentCards.Count == 0) 
                     StartCoroutine(DayManager.instance.EndDay());
                 return;

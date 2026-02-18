@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Mokou0
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Why are you immortal?
+  cardImage: {fileID: -7695967335846701672, guid: c368b6e72ff74f949ad67de3e7259b33, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Letty4
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: "Where do you go once winter ends?\u201D"
+  cardImage: {fileID: -8598459595394120968, guid: ef412fe2715adf34ca5c021bedcb557a, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

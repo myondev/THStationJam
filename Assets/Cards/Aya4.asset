@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Aya4
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Do you think everyone believes in your stories?
+  cardImage: {fileID: 170705653057311581, guid: 6901a30cc24e7934abbb14e630472bc1, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

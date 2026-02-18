@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Letty3
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: What is your role as a youkai?
+  cardImage: {fileID: 5425691121482976125, guid: b4b52cd504580c04e86315e01ec12921, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

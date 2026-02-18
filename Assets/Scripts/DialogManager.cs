@@ -66,5 +66,6 @@ public class DialogManager : MonoBehaviour
             textBox.gameObject.SetActive(false);
         }
         dialogActive = false;
+        CardManager.instance.canUseCards = true;
     }
 }

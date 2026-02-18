@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Mokou1
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Would you rather be alive or dead?
+  cardImage: {fileID: 6577212785660644261, guid: a04fede8af2cb1d41ab9e2e282b9abb2, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

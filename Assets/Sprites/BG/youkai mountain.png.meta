@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      youkai mountain_0: -916396819692699595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

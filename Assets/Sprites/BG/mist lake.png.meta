@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mist lake_0: 3595733379527068134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

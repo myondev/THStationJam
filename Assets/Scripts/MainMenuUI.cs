@@ -25,7 +25,7 @@ public class MainMenuUI : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1;
-        StartCoroutine(FadeToBlack());
+        SceneManager.LoadScene("Main Game");
     }
     public void QuitGame()
     {
@@ -38,17 +38,5 @@ public class MainMenuUI : MonoBehaviour
         Application.Quit();
         }
 #endif
-    }
-
-    private IEnumerator FadeToBlack()
-    {
-        float currentState = 0;
-        while (currentState < 1)
-        {
-            currentState += Time.deltaTime * fadeSpeed;
-            fadeImage.color = Color.Lerp(Color.clear, Color.black, currentState);
-            yield return null;
-        }
-        SceneManager.LoadScene(1);
     }
 }

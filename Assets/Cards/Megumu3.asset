@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Megumu3
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: What are your intentions with Aya?
+  cardImage: {fileID: -8235175130139818954, guid: 3f5b7fb2d4c27644dab775e7d9aac5a4, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

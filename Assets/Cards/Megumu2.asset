@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Megumu2
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: "Why do you re-publish information that isn\u2019t yours?"
+  cardImage: {fileID: -3467737959267062469, guid: fc176fae83d3ef74a844d4f46aab822d, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Aya1
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Where do you get your information from?
+  cardImage: {fileID: 1598225364981731890, guid: 4776a43796b82f04eb848b47c953f0e1, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Letty0
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Why did you cause this snowstorm?
+  cardImage: {fileID: -3330237488585235637, guid: c1be21d2b423ee342a87c4d25fa58418, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24cfa622b2d4dd199491e393bd04ae8, type: 3}
   m_Name: Aya4
   m_EditorClassIdentifier: 
-  dialogID: Letty4
+  dialogID: Aya4
   data:
   - text: Do you think everyone believes in your stories?
     characterTalking: 0

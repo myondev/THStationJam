@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1b41acd8c52945ed48a0d7a3ae3ff7e0
+guid: 4384fe231737a9b449dcfc395e71ea41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4196770396374818671
-    second: bamboo forest_0
+      213: 7703740865708344643
+    second: bamboo forest 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bamboo forest_0
+      name: bamboo forest 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6fdbc7a07ced3a30800000000000000
-      internalID: 4196770396374818671
+      spriteID: 345c43e408f29ea60800000000000000
+      internalID: 7703740865708344643
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bamboo forest 1_0: 7703740865708344643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

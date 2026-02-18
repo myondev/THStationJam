@@ -39,6 +39,7 @@ public class  DayManager : MonoBehaviour
         streamingChatManager.IsWorking = false;
         ChangeDay();
 
+        dayText.enabled = true;
         dayText.text = "Day " + (currentDay + 1);
 
         float count = 0;
@@ -66,6 +67,7 @@ public class  DayManager : MonoBehaviour
         dialogManager.LaunchDialog($"Day{currentDay+1}Post");
         yield return new WaitUntil(() => !dialogManager.IsDialogActive);
 
+        dayText.enabled = false;
         blackScreen.gameObject.SetActive(true);
         float count = 0;
         while (count < blackScreenFadeIn)
@@ -89,8 +91,7 @@ public class  DayManager : MonoBehaviour
         audioSource.Play();
         
         streamingChatManager.ResetChat();
-        CardManager.instance.allCards = dayList[currentDay].dayCardList;
-        CardManager.instance.GenerateCardUI();
+        CardManager.instance.GenerateCardUI(dayList[currentDay].dayCardList);
     }
 
     [Serializable]

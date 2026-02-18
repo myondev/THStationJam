@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1cfbbd51e39b3e7ba1a0de968ee380, type: 3}
   m_Name: Aya3
   m_EditorClassIdentifier: 
-  cardName: Placeholder
-  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  cardName: Does the tengu society approve of your false claims? What goes on behind
+    the scenes?
+  cardImage: {fileID: 4228869725396624724, guid: 42a3a5122d593fc4283d9ca7a99f5f41, type: 3}
   description: 
   viewerModifier: 40
   subscriberModifier: 2
