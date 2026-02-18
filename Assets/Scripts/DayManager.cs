@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -12,11 +13,13 @@ public class  DayManager : MonoBehaviour
     [SerializeField] private Image blackScreen;
     [SerializeField] private float blackScreenFadeIn;
     [SerializeField] private float blackScreenFadeOut;
+    [SerializeField] private TextMeshProUGUI dayText;
     [Header("Refs")]
     [SerializeField] private Image guestImage;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private StreamingChatManager streamingChatManager;
+    [SerializeField] private DialogManager dialogManager;
     
     public static DayManager instance;
     private int currentDay = 0;
@@ -36,6 +39,8 @@ public class  DayManager : MonoBehaviour
         streamingChatManager.IsWorking = false;
         ChangeDay();
 
+        dayText.text = "Day " + (currentDay + 1);
+
         float count = 0;
         while (count < blackScreenFadeOut)
         {
@@ -46,16 +51,16 @@ public class  DayManager : MonoBehaviour
         }
         blackScreen.gameObject.SetActive(false);
         streamingChatManager.IsWorking = true;
-        CardManager.instance.GenerateCardUI();
     }
 
     public IEnumerator EndDay()
     {
         //To call when all cards have been used
         currentDay++;
+        yield return new WaitUntil(() => !dialogManager.IsDialogActive);
         
         //Show stats of the day
-        yield return new WaitUntil(() => Mouse.current.leftButton.isPressed);
+        // yield return new WaitUntil(() => Mouse.current.leftButton.isPressed);
         //Hide stats
 
         blackScreen.gameObject.SetActive(true);
