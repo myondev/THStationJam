@@ -23,6 +23,11 @@ public class DayManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         instance = this;
     }
 
@@ -75,6 +80,7 @@ public class DayManager : MonoBehaviour
         audioSource.Play();
         
         streamingChatManager.ResetChat();
+        CardManager.instance.GenerateCardUI();
     }
 
     [Serializable]

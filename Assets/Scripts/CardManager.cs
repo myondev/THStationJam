@@ -62,6 +62,7 @@ public class CardManager : MonoBehaviour
             {
                 Destroy(foundCardUI.cardUI.gameObject);
                 currentCards.Remove(foundCardUI);
+                Debug.Log(currentCards.Count);
                 if (currentCards.Count == 0) 
                     StartCoroutine(DayManager.instance.EndDay());
                 return;

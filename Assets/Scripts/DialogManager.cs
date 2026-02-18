@@ -12,7 +12,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private Image textBoxBg;
     [SerializeField] private float textSpeed;
-    [SerializeField] private List<DialogData> dialogs = new();
+    [SerializeField] private DialogScript dialogs;
     
     private bool dialogActive;
 
@@ -24,7 +24,7 @@ public class DialogManager : MonoBehaviour
             textBoxBg.gameObject.SetActive(true);
         }
         
-        DialogData temp = dialogs.FirstOrDefault(x => x.dialogID == dialogId);
+        DialogData temp = dialogs.data.FirstOrDefault(x => x.dialogID == dialogId);
         dialogActive = true;
         StartCoroutine(ShowDialog(temp));
     }
@@ -32,7 +32,6 @@ public class DialogManager : MonoBehaviour
     private IEnumerator ShowDialog(DialogData data)
     {
         textBox.text = "";
-        if(data.image) textBoxBg.sprite = data.image;
         
         //Remove one of the WaitForEndOfFrame, and it doesn't work well, dunno why :shrug:
         float textTimer = 0;
@@ -60,14 +59,5 @@ public class DialogManager : MonoBehaviour
             textBox.gameObject.SetActive(false);
             textBoxBg.gameObject.SetActive(false);
         }
-    }
-
-    [Serializable]
-    public struct DialogData
-    {
-        public string dialogID;
-        public string text;
-        public Sprite image;
-        public string nextDialogId;
     }
 }
