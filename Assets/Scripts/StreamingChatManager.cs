@@ -17,6 +17,7 @@ public class StreamingChatManager : MonoBehaviour
     private float timeInSeconds;
     private float timer;
     private float messageSize;
+    public bool IsWorking { get; set; }
 
     private void Start()
     {
@@ -27,14 +28,17 @@ public class StreamingChatManager : MonoBehaviour
 
     private void Update()
     {
-        timeInSeconds += Time.deltaTime;
-        timer += Time.deltaTime;
-
-        if (timer >= currentDelay)
+        if (IsWorking)
         {
-            ChooseNewDelay();
+            timeInSeconds += Time.deltaTime;
+            timer += Time.deltaTime;
+
+            if (timer >= currentDelay)
+            {
+                ChooseNewDelay();
             
-            CraftMessage();
+                CraftMessage();
+            }
         }
     }
 
@@ -68,9 +72,10 @@ public class StreamingChatManager : MonoBehaviour
 
     public void ResetChat()
     {
-        var array = layout.GetComponentsInChildren<RectTransform>();
-        for (int i = 0; i < array.Length;)
-            Destroy(array[i].gameObject);
+        var array = layout.GetComponentsInChildren<RectTransform>(); 
+        foreach (var t in array)
+             if(t.gameObject != layout) Destroy(t.gameObject);
+
         timeInSeconds = 0;
         ChooseNewDelay();
     }

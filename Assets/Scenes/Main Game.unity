@@ -482,10 +482,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayList:
   - guest: {fileID: 21300000, guid: 25624e554daa18048b23db021b74a26c, type: 3}
-    background: {fileID: 0}
+    background: {fileID: -7782661588260774185, guid: d37a0da7e0cd88a438776996f4937388, type: 3}
     clip: {fileID: 8300000, guid: 218d9014537ee794f9cb068912a72501, type: 3}
   - guest: {fileID: 21300000, guid: 8632f156da11e09459e5a8b28e7a4fab, type: 3}
-    background: {fileID: 0}
+    background: {fileID: 1208040086343421634, guid: 721ec4cf6a571b04fa4b8501eac55bee, type: 3}
     clip: {fileID: 8300000, guid: 2eed259a0f9f5264da1c21f6bff4ecd2, type: 3}
   - guest: {fileID: 21300000, guid: aaebe18279e10a54b87c5a44cd4e018c, type: 3}
     background: {fileID: 0}
@@ -1444,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 149.31, y: -42.3}
+  m_AnchoredPosition: {x: 137, y: -26.707}
   m_SizeDelta: {x: 581.371, y: 624.5626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392253763

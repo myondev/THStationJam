@@ -19,18 +19,16 @@ public class DayManager : MonoBehaviour
     [SerializeField] private StreamingChatManager streamingChatManager;
     
     public static DayManager instance;
-    private int currentDay = 1;
+    private int currentDay = 0;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
-        StartCoroutine(StartNewDay());
     }
 
-    public IEnumerator StartNewDay()
+    private IEnumerator Start()
     {
-        Time.timeScale = 0;
-        
+        streamingChatManager.IsWorking = false;
         ChangeDay();
 
         float count = 0;
@@ -38,11 +36,11 @@ public class DayManager : MonoBehaviour
         {
             float currentAlpha = Mathf.Lerp(1, 0, count /  blackScreenFadeOut);
             blackScreen.color = Color.black * currentAlpha;
-            count += 0.1f;
-            yield return new WaitForSecondsRealtime(0.1f);
+            count += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
         }
         blackScreen.gameObject.SetActive(false);
-        Time.timeScale = 1;
+        streamingChatManager.IsWorking = true;
     }
 
     public IEnumerator EndDay()
@@ -60,11 +58,11 @@ public class DayManager : MonoBehaviour
         {
             float currentAlpha = Mathf.Lerp(0, 1, count /  blackScreenFadeIn);
             blackScreen.color = Color.black * currentAlpha;
-            count += 0.1f;
-            yield return new WaitForSecondsRealtime(0.1f);
+            count += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
         }
         
-        StartCoroutine(StartNewDay());
+        StartCoroutine(Start());
     }
 
     private void ChangeDay()
