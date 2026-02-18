@@ -19,6 +19,7 @@ public class StatsManager : MonoBehaviour
 
     #endregion
 
+    public DialogManager dialogManager;
     [Header("Stream Stats")] 
     public int subscribers;
     public int viewers;

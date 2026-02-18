@@ -7,10 +7,11 @@ public class Card : ScriptableObject //i believe it should be a scriptable objec
     public string cardName;
     public Sprite cardImage;
     public string description;
-
+    
     [Header("Stat Changes")] 
     public int viewerModifier;
     public int subscriberModifier;
+    public string dialogToShow;
     public void ActivateCard()
     {
         CardEffects();
@@ -26,7 +27,7 @@ public class Card : ScriptableObject //i believe it should be a scriptable objec
         
         StatsManager.instance.UpdateViewers(viewerModifier);
         StatsManager.instance.UpdateSubscribers(subscriberModifier);
-        
+        StatsManager.instance.dialogManager.LaunchDialog(dialogToShow);
         
     }
     

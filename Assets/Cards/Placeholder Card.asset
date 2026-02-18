@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Placeholder Card
   m_EditorClassIdentifier: 
   cardName: Placeholder
-  cardImage: {fileID: 8025868647865063150, guid: b617f6ac5500006dda721b8dc7edf83d, type: 3}
+  cardImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  description: 
   viewerModifier: 40
   subscriberModifier: 2
+  dialogToShow: Letty0
