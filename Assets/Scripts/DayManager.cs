@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class DayManager : MonoBehaviour
+public class  DayManager : MonoBehaviour
 {
     [SerializeField] private List<Day> dayList;
     [Header("Black Screen")]
@@ -41,6 +41,7 @@ public class DayManager : MonoBehaviour
         }
         blackScreen.gameObject.SetActive(false);
         streamingChatManager.IsWorking = true;
+        CardManager.instance.GenerateCardUI();
     }
 
     public IEnumerator EndDay()
